@@ -201,15 +201,18 @@ int main()
 
     vector<int> :: iterator  it;
 
-   it = v.begin();   /// it point point the first index.
+    it = v.begin();   /// it point point the first index.
     cout<< "the iteration is "<< *it<<endl;  /// print the first element .
 
     it = v.begin()+3;  /// point the 4th index.
     cout<< "the element is "<< *it<<endl;
 
-    for(int i = 0; i < v.size(); i++){
+   /* for(int i = 0; i < v.size(); i++){
         it = v.begin()+i;  /// point all element.
-        cout<<*it<< " ";
+        cout<<*it<< " ";*/
+
+    for(it = v.begin(); it != v.end(); it++){
+        cout<< *it<< " ";
     }
 
 }
